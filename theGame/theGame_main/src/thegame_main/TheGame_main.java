@@ -8,6 +8,7 @@ package thegame_main;
 import com.beweb.lunel.poo.theGame.entities.Elf;
 import com.beweb.lunel.poo.theGame.entities.Humain;
 import com.beweb.lunel.poo.theGame.entities.Personnage;
+import com.beweb.lunel.poo.theGame.entities.interfaces.ActionInterface;
 
 /**
  *
@@ -30,17 +31,19 @@ public class TheGame_main {
             double choix = Math.random();
 
             if (choix > 0.5) {
-                domeDuTonnere[0].attaquer(domeDuTonnere[1]);
+                domeDuTonnere[0].Attaquer(domeDuTonnere[1]);
                 fin = domeDuTonnere[1].pv;
             }
             
             
             else{
-            domeDuTonnere[1].attaquer(domeDuTonnere[0]);
+            domeDuTonnere[1].Attaquer(domeDuTonnere[0]);
             fin = domeDuTonnere[0].pv;
             }
             
         }
     }
-
+    public static void action(ActionInterface object, Personnage cible){
+        object.Attaquer(cible);
+    }
 }

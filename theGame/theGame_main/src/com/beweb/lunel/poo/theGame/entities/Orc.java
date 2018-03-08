@@ -23,8 +23,7 @@ public class Orc extends Personnage {
     }
 
     @Override
-    protected void initAttributs() {
-        
+    public void initAttributs() {       
         this.force = 15;
         this.endurance = 12;
         this.pv = 65;

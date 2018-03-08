@@ -21,4 +21,12 @@ public class Orc extends Personnage {
     public Orc(String n){
         super(n);
     }
+
+    @Override
+    protected void initAttributs() {
+        
+        this.force = 15;
+        this.endurance = 12;
+        this.pv = 65;
+    }
 }

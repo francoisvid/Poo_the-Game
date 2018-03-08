@@ -20,4 +20,13 @@ public class Elf extends Personnage {
     public Elf(String n) {
         super(n);
     }
+
+    @Override
+    public void initAttributs() {
+        this.endurance = 18;
+        this.force = 8;
+        this.pv = 30;
+    }
+    
+    
 }
